@@ -19,10 +19,16 @@
     </dmn:itemComponent>
   </dmn:itemDefinition>
   <dmn:itemDefinition id="_F7196AAB-D8AD-45B3-AD79-C48B18669A3D" name="tViolation" isCollection="false">
-    <dmn:itemComponent id="_F3946A2E-B948-417D-B7ED-5DD05860747C" name="Actual Speed" isCollection="false">
+    <dmn:itemComponent id="_53FF21B7-406F-4ED7-9F4D-ACBB3301DF59" name="Date" isCollection="false">
+      <dmn:typeRef>date</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_BE319372-5D77-4A86-B557-F52E39279EC9" name="Speed Limit" isCollection="false">
       <dmn:typeRef>number</dmn:typeRef>
     </dmn:itemComponent>
-    <dmn:itemComponent id="_24378EE4-04D0-45F5-85AF-F3C52B9FCC81" name="Speed Limit" isCollection="false">
+    <dmn:itemComponent id="_0DE36273-9CFA-4CF0-944F-4332266B43BC" name="Code" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_F3946A2E-B948-417D-B7ED-5DD05860747C" name="Actual Speed" isCollection="false">
       <dmn:typeRef>number</dmn:typeRef>
     </dmn:itemComponent>
     <dmn:itemComponent id="_1B6E3962-DFFC-4C14-A135-D8AC534B4D3D" name="Type" isCollection="false">
@@ -30,12 +36,6 @@
       <dmn:allowedValues kie:constraintType="enumeration" id="_4C5FC5A5-C01F-48BC-8E11-980D2FE26951">
         <dmn:text>"speed", "parking", "driving under the influence"</dmn:text>
       </dmn:allowedValues>
-    </dmn:itemComponent>
-    <dmn:itemComponent id="_E85B1B53-F0BF-4C3B-986E-9E6EB6A4D07F" name="Date" isCollection="false">
-      <dmn:typeRef>date</dmn:typeRef>
-    </dmn:itemComponent>
-    <dmn:itemComponent id="_019DCA1C-2421-48C5-BC30-F66009E2EB02" name="Code" isCollection="false">
-      <dmn:typeRef>string</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
   <dmn:itemDefinition id="_7C43544D-4AB3-45BD-88CD-0F9DF22319B9" name="tFine" isCollection="false">
@@ -69,12 +69,43 @@
     <dmn:informationRequirement id="_74241A06-052D-4AC7-9953-DC002515B7EC">
       <dmn:requiredInput href="#_6ECF3087-E06D-49B0-A6CE-1BD16C076484"/>
     </dmn:informationRequirement>
-    <dmn:literalExpression/>
+    <dmn:decisionTable id="_8D6462A7-ED6F-4A03-8550-6DFC2DF2E8B1" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_CF53B7B6-FBB6-4C65-B726-91B9835B09B1">
+        <dmn:inputExpression id="_2F3AA138-3ACD-4D21-9273-2CD6AE896B5F" typeRef="string">
+          <dmn:text>Violation.Type</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_6003FD4D-1B88-47A3-B192-80716B0830E5">
+        <dmn:inputExpression id="_FE77753A-C276-419D-BFC4-A7A987590CB3" typeRef="number">
+          <dmn:text>Violation.Actual Speed - Violation.Speed Limit</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_A98AEF0D-C366-4EEE-AA6D-984E760640A0" typeRef="tFine"/>
+      <dmn:rule id="_5582C0E7-5BE9-41A0-86EF-830F88ABABDC">
+        <dmn:inputEntry id="_697BFF69-069D-4D0E-85CC-457CCDA4119C">
+          <dmn:text>"speed"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_EC2B98C4-0E15-45FD-BD8A-860A230800E1">
+          <dmn:text></dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_5727BC4F-A55B-4F2E-9A43-710F1B4FF096">
+          <dmn:text></dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
   </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
-        <kie:ComponentsWidthsExtension/>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_8D6462A7-ED6F-4A03-8550-6DFC2DF2E8B1">
+            <kie:width>50.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-_1E98240D-1063-433F-AB7A-1AD10D8DE73C" dmnElementRef="_1E98240D-1063-433F-AB7A-1AD10D8DE73C" isCollapsed="false">
         <dmndi:DMNStyle>
