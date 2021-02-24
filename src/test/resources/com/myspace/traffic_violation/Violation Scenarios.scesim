@@ -3,7 +3,7 @@
     <simulationDescriptor>
       <factMappings>
         <FactMapping>
-          <expressionElements class="linked-list"/>
+          <expressionElements/>
           <expressionIdentifier>
             <name>Index</name>
             <type>OTHER</type>
@@ -16,7 +16,7 @@
           <factAlias>#</factAlias>
         </FactMapping>
         <FactMapping>
-          <expressionElements class="linked-list"/>
+          <expressionElements/>
           <expressionIdentifier>
             <name>Description</name>
             <type>OTHER</type>
@@ -29,7 +29,7 @@
           <factAlias>Scenario description</factAlias>
         </FactMapping>
         <FactMapping>
-          <expressionElements class="linked-list">
+          <expressionElements>
             <ExpressionElement>
               <step>Driver</step>
             </ExpressionElement>
@@ -50,61 +50,7 @@
           <expressionAlias>Points</expressionAlias>
         </FactMapping>
         <FactMapping>
-          <expressionElements class="linked-list">
-            <ExpressionElement>
-              <step>Driver</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>State</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>0|2</name>
-            <type>GIVEN</type>
-          </expressionIdentifier>
-          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
-          <className>string</className>
-          <factAlias>Driver</factAlias>
-          <expressionAlias>State</expressionAlias>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements class="linked-list">
-            <ExpressionElement>
-              <step>Driver</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>City</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>0|3</name>
-            <type>GIVEN</type>
-          </expressionIdentifier>
-          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
-          <className>string</className>
-          <factAlias>Driver</factAlias>
-          <expressionAlias>City</expressionAlias>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements class="linked-list">
-            <ExpressionElement>
-              <step>Driver</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>Age</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>0|4</name>
-            <type>GIVEN</type>
-          </expressionIdentifier>
-          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
-          <className>number</className>
-          <factAlias>Driver</factAlias>
-          <expressionAlias>Age</expressionAlias>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements class="linked-list">
+          <expressionElements>
             <ExpressionElement>
               <step>Driver</step>
             </ExpressionElement>
@@ -122,7 +68,7 @@
           <expressionAlias>Name</expressionAlias>
         </FactMapping>
         <FactMapping>
-          <expressionElements class="linked-list">
+          <expressionElements>
             <ExpressionElement>
               <step>Violation</step>
             </ExpressionElement>
@@ -143,7 +89,7 @@
           <expressionAlias>Type</expressionAlias>
         </FactMapping>
         <FactMapping>
-          <expressionElements class="linked-list">
+          <expressionElements>
             <ExpressionElement>
               <step>Violation</step>
             </ExpressionElement>
@@ -155,13 +101,13 @@
             <name>0|7</name>
             <type>GIVEN</type>
           </expressionIdentifier>
-          <factIdentifier reference="../../FactMapping[8]/factIdentifier"/>
+          <factIdentifier reference="../../FactMapping[5]/factIdentifier"/>
           <className>number</className>
           <factAlias>Violation</factAlias>
           <expressionAlias>Speed Limit</expressionAlias>
         </FactMapping>
         <FactMapping>
-          <expressionElements class="linked-list">
+          <expressionElements>
             <ExpressionElement>
               <step>Violation</step>
             </ExpressionElement>
@@ -173,49 +119,13 @@
             <name>0|8</name>
             <type>GIVEN</type>
           </expressionIdentifier>
-          <factIdentifier reference="../../FactMapping[8]/factIdentifier"/>
+          <factIdentifier reference="../../FactMapping[5]/factIdentifier"/>
           <className>number</className>
           <factAlias>Violation</factAlias>
           <expressionAlias>Actual Speed</expressionAlias>
         </FactMapping>
         <FactMapping>
-          <expressionElements class="linked-list">
-            <ExpressionElement>
-              <step>Violation</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>Code</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>0|9</name>
-            <type>GIVEN</type>
-          </expressionIdentifier>
-          <factIdentifier reference="../../FactMapping[8]/factIdentifier"/>
-          <className>number</className>
-          <factAlias>Violation</factAlias>
-          <expressionAlias>Code</expressionAlias>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements class="linked-list">
-            <ExpressionElement>
-              <step>Violation</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>Date</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>0|10</name>
-            <type>GIVEN</type>
-          </expressionIdentifier>
-          <factIdentifier reference="../../FactMapping[8]/factIdentifier"/>
-          <className>date</className>
-          <factAlias>Violation</factAlias>
-          <expressionAlias>Date</expressionAlias>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements class="linked-list">
+          <expressionElements>
             <ExpressionElement>
               <step>Fine</step>
             </ExpressionElement>
@@ -236,7 +146,7 @@
           <expressionAlias>Points</expressionAlias>
         </FactMapping>
         <FactMapping>
-          <expressionElements class="linked-list">
+          <expressionElements>
             <ExpressionElement>
               <step>Fine</step>
             </ExpressionElement>
@@ -248,13 +158,13 @@
             <name>0|12</name>
             <type>EXPECT</type>
           </expressionIdentifier>
-          <factIdentifier reference="../../FactMapping[13]/factIdentifier"/>
+          <factIdentifier reference="../../FactMapping[8]/factIdentifier"/>
           <className>number</className>
           <factAlias>Fine</factAlias>
           <expressionAlias>Amount</expressionAlias>
         </FactMapping>
         <FactMapping>
-          <expressionElements class="linked-list">
+          <expressionElements>
             <ExpressionElement>
               <step>suspend</step>
             </ExpressionElement>
@@ -275,64 +185,57 @@
       <dmnFilePath>src/main/resources/com/myspace/traffic_violation/traffic-violation.dmn</dmnFilePath>
       <type>DMN</type>
     </simulationDescriptor>
-    <scenarios class="linked-list">
+    <scenarios>
       <Scenario>
         <factMappingValues>
           <FactMappingValue>
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[2]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[2]/expressionIdentifier"/>
+            <rawValue class="string">Above speed limit: 10km/h and 30 km/h</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/expressionIdentifier"/>
+            <rawValue class="string">10</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/expressionIdentifier"/>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
+            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/expressionIdentifier"/>
+            <rawValue class="string">&quot;speed&quot;</rawValue>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
+            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[6]/expressionIdentifier"/>
+            <rawValue class="string">100</rawValue>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
+            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[7]/expressionIdentifier"/>
+            <rawValue class="string">120</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[8]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[8]/expressionIdentifier"/>
+            <rawValue class="string">3</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[8]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[9]/expressionIdentifier"/>
+            <rawValue class="string">500</rawValue>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[8]/factIdentifier"/>
+            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[10]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[10]/expressionIdentifier"/>
+            <rawValue class="string">&quot;No&quot;</rawValue>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[8]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[11]/expressionIdentifier"/>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[8]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[12]/expressionIdentifier"/>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[13]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[13]/expressionIdentifier"/>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[13]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[14]/expressionIdentifier"/>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[15]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[15]/expressionIdentifier"/>
+            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping/factIdentifier"/>
+            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping/expressionIdentifier"/>
+            <rawValue class="string">1</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor reference="../../../simulationDescriptor"/>
