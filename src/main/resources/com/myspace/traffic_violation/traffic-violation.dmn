@@ -59,9 +59,7 @@
     <dmn:informationRequirement id="_41E11D16-640C-423A-8F4E-B54FBDBD098E">
       <dmn:requiredDecision href="#_93C1165C-B0B7-46D4-B1A0-EAF0DD8A706B"/>
     </dmn:informationRequirement>
-    <dmn:literalExpression id="_C594A15E-2AF6-40C0-8AAC-FF4FEBABBF18">
-      <dmn:text></dmn:text>
-    </dmn:literalExpression>
+    <dmn:literalExpression/>
   </dmn:decision>
   <dmn:inputData id="_C64CE562-0A22-4F8F-957C-5E69A0A1FB7E" name="Driver">
     <dmn:variable id="_E7148A76-88AD-4AC9-92BB-E1C81890DDAA" name="Driver" typeRef="tDriver"/>
@@ -146,7 +144,6 @@
     <dmndi:DMNDiagram>
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_C594A15E-2AF6-40C0-8AAC-FF4FEBABBF18"/>
           <kie:ComponentWidths dmnElementRef="_BA76E7C9-E3F0-4FFA-B0F7-CC2D17E3F1D4">
             <kie:width>50.0</kie:width>
             <kie:width>242.0</kie:width>
@@ -172,7 +169,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="437" y="19" width="100" height="50"/>
+        <dc:Bounds x="437" y="12" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_C64CE562-0A22-4F8F-957C-5E69A0A1FB7E" dmnElementRef="_C64CE562-0A22-4F8F-957C-5E69A0A1FB7E" isCollapsed="false">
@@ -195,11 +192,11 @@
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_ED6F25F9-6BC6-438C-B094-233E5B0CEEB3" dmnElementRef="_ED6F25F9-6BC6-438C-B094-233E5B0CEEB3">
         <di:waypoint x="448" y="260"/>
-        <di:waypoint x="437" y="44"/>
+        <di:waypoint x="437" y="37"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_41E11D16-640C-423A-8F4E-B54FBDBD098E" dmnElementRef="_41E11D16-640C-423A-8F4E-B54FBDBD098E">
         <di:waypoint x="594" y="120"/>
-        <di:waypoint x="537" y="44"/>
+        <di:waypoint x="537" y="37"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_74241A06-052D-4AC7-9953-DC002515B7EC" dmnElementRef="_74241A06-052D-4AC7-9953-DC002515B7EC">
         <di:waypoint x="669" y="260"/>
