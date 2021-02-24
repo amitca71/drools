@@ -51,7 +51,7 @@
   </dmn:inputData>
   <dmn:decision id="_1E98240D-1063-433F-AB7A-1AD10D8DE73C" name="Should the driver be suspended?">
     <dmn:question>Should the driver be suspended due to points on his driver license?</dmn:question>
-    <dmn:allowedAnswers>Yes,No</dmn:allowedAnswers>
+    <dmn:allowedAnswers>"Yes","No"</dmn:allowedAnswers>
     <dmn:variable id="_09C657AF-B3D1-4C6B-80F1-42D245DA70DF" name="Should the driver be suspended?" typeRef="string"/>
     <dmn:informationRequirement id="_ED6F25F9-6BC6-438C-B094-233E5B0CEEB3">
       <dmn:requiredInput href="#_C64CE562-0A22-4F8F-957C-5E69A0A1FB7E"/>
