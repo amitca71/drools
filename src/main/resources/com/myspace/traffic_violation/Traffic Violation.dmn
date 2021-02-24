@@ -45,7 +45,9 @@
     </dmn:itemComponent>
   </dmn:itemDefinition>
   <dmn:decision id="_1F16FAFA-DB6A-4061-8C1B-BC86675891C1" name="Should the driver be suspended?">
-    <dmn:variable id="_100B8CD2-07EE-4418-871C-D7EEAF142A33" name="Should the driver be suspended?"/>
+    <dmn:question>Should the driver be suspended due to points on his driver license?</dmn:question>
+    <dmn:allowedAnswers>Yes,No</dmn:allowedAnswers>
+    <dmn:variable id="_100B8CD2-07EE-4418-871C-D7EEAF142A33" name="Should the driver be suspended?" typeRef="string"/>
     <dmn:informationRequirement id="_C7012F1F-7BD1-41E6-B706-A4FD729B9E4E">
       <dmn:requiredInput href="#_587CD362-4732-474E-985F-529369ECD0C8"/>
     </dmn:informationRequirement>
@@ -55,13 +57,13 @@
     <dmn:literalExpression/>
   </dmn:decision>
   <dmn:inputData id="_BF9F529A-4C5D-4E24-B409-2A742B87BACE" name="Driver">
-    <dmn:variable id="_D4719B7C-0E05-48CB-8EA2-1F2A712BC65C" name="Driver"/>
+    <dmn:variable id="_D4719B7C-0E05-48CB-8EA2-1F2A712BC65C" name="Driver" typeRef="tDriver"/>
   </dmn:inputData>
   <dmn:inputData id="_587CD362-4732-474E-985F-529369ECD0C8" name="Violation">
-    <dmn:variable id="_58B4F640-A80F-44BB-AB52-5547DA755C8D" name="Violation"/>
+    <dmn:variable id="_58B4F640-A80F-44BB-AB52-5547DA755C8D" name="Violation" typeRef="tViolation"/>
   </dmn:inputData>
   <dmn:decision id="_424915E1-4E76-4C35-A394-928DC9161524" name="Fine">
-    <dmn:variable id="_8C2DE068-EA48-4A41-B01F-6F6CAA684403" name="Fine"/>
+    <dmn:variable id="_8C2DE068-EA48-4A41-B01F-6F6CAA684403" name="Fine" typeRef="tFine"/>
     <dmn:informationRequirement id="_8591130C-C247-4B72-A885-FA399C795320">
       <dmn:requiredInput href="#_BF9F529A-4C5D-4E24-B409-2A742B87BACE"/>
     </dmn:informationRequirement>
@@ -87,7 +89,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="333" y="36" width="100" height="50"/>
+        <dc:Bounds x="331" y="34" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_587CD362-4732-474E-985F-529369ECD0C8" dmnElementRef="_587CD362-4732-474E-985F-529369ECD0C8" isCollapsed="false">
@@ -114,11 +116,11 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_C7012F1F-7BD1-41E6-B706-A4FD729B9E4E" dmnElementRef="_C7012F1F-7BD1-41E6-B706-A4FD729B9E4E">
         <di:waypoint x="302" y="254"/>
-        <di:waypoint x="333" y="61"/>
+        <di:waypoint x="331" y="59"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_27686DAB-A3A9-427D-8229-DD3EF8615E9E" dmnElementRef="_27686DAB-A3A9-427D-8229-DD3EF8615E9E">
         <di:waypoint x="424" y="148"/>
-        <di:waypoint x="433" y="61"/>
+        <di:waypoint x="431" y="59"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
